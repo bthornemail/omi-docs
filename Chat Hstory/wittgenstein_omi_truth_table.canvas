@@ -1,0 +1,536 @@
+{
+  "nodes": [
+    {
+      "id": "group-wittgenstein-kmap",
+      "type": "group",
+      "x": -40,
+      "y": -70,
+      "width": 1460,
+      "height": 1140,
+      "label": "Wittgenstein 16 Truth Functions as OMI Decision Table / K-map Draft",
+      "color": "6"
+    },
+    {
+      "id": "w00",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 210,
+      "text": "## 0: ⊥\n\n**Name:** Contradiction  \n**Expression:** `false`  \n**Tractatus:** `Opq`  \n**Truth code:** `FFFF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | F | F | F |\n\n```omi\n(wittgenstein.cell\n  (code . 0)\n  (truth . FFFF)\n  (operator . ⊥)\n  (expression . \"false\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "1"
+    },
+    {
+      "id": "w01",
+      "type": "text",
+      "x": 360,
+      "y": 0,
+      "width": 300,
+      "height": 210,
+      "text": "## 1: NOR\n\n**Name:** Logical NOR  \n**Expression:** `p ↓ q`  \n**Tractatus:** `Xpq`  \n**Truth code:** `FFFT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | F | F | T |\n\n```omi\n(wittgenstein.cell\n  (code . 1)\n  (truth . FFFT)\n  (operator . NOR)\n  (expression . \"p ↓ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "2"
+    },
+    {
+      "id": "w03",
+      "type": "text",
+      "x": 720,
+      "y": 0,
+      "width": 300,
+      "height": 210,
+      "text": "## 3: ¬p\n\n**Name:** Negation not p  \n**Expression:** `¬p`  \n**Tractatus:** `Np/Fpq`  \n**Truth code:** `FFTT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | F | T | T |\n\n```omi\n(wittgenstein.cell\n  (code . 3)\n  (truth . FFTT)\n  (operator . ¬p)\n  (expression . \"¬p\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "4"
+    },
+    {
+      "id": "w02",
+      "type": "text",
+      "x": 1080,
+      "y": 0,
+      "width": 300,
+      "height": 210,
+      "text": "## 2: ↚\n\n**Name:** Converse nonimplication  \n**Expression:** `p ↚ q`  \n**Tractatus:** `Mpq`  \n**Truth code:** `FFTF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | F | T | F |\n\n```omi\n(wittgenstein.cell\n  (code . 2)\n  (truth . FFTF)\n  (operator . ↚)\n  (expression . \"p ↚ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "3"
+    },
+    {
+      "id": "w04",
+      "type": "text",
+      "x": 0,
+      "y": 270,
+      "width": 300,
+      "height": 210,
+      "text": "## 4: ↛\n\n**Name:** Material nonimplication  \n**Expression:** `p ↛ q`  \n**Tractatus:** `Lpq`  \n**Truth code:** `FTFF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | T | F | F |\n\n```omi\n(wittgenstein.cell\n  (code . 4)\n  (truth . FTFF)\n  (operator . ↛)\n  (expression . \"p ↛ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "5"
+    },
+    {
+      "id": "w05",
+      "type": "text",
+      "x": 360,
+      "y": 270,
+      "width": 300,
+      "height": 210,
+      "text": "## 5: ¬q\n\n**Name:** Negation not q  \n**Expression:** `¬q`  \n**Tractatus:** `Nq/Gpq`  \n**Truth code:** `FTFT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | T | F | T |\n\n```omi\n(wittgenstein.cell\n  (code . 5)\n  (truth . FTFT)\n  (operator . ¬q)\n  (expression . \"¬q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "6"
+    },
+    {
+      "id": "w07",
+      "type": "text",
+      "x": 720,
+      "y": 270,
+      "width": 300,
+      "height": 210,
+      "text": "## 7: NAND\n\n**Name:** Logical NAND  \n**Expression:** `p ↑ q`  \n**Tractatus:** `Dpq`  \n**Truth code:** `FTTT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | T | T | T |\n\n```omi\n(wittgenstein.cell\n  (code . 7)\n  (truth . FTTT)\n  (operator . NAND)\n  (expression . \"p ↑ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "2"
+    },
+    {
+      "id": "w06",
+      "type": "text",
+      "x": 1080,
+      "y": 270,
+      "width": 300,
+      "height": 210,
+      "text": "## 6: XOR\n\n**Name:** Exclusive disjunction  \n**Expression:** `p ⊕ q`  \n**Tractatus:** `Jpq`  \n**Truth code:** `FTTF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | F | T | T | F |\n\n```omi\n(wittgenstein.cell\n  (code . 6)\n  (truth . FTTF)\n  (operator . XOR)\n  (expression . \"p ⊕ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "1"
+    },
+    {
+      "id": "w12",
+      "type": "text",
+      "x": 0,
+      "y": 540,
+      "width": 300,
+      "height": 210,
+      "text": "## 12: p\n\n**Name:** Projection p  \n**Expression:** `p`  \n**Tractatus:** `Ipq`  \n**Truth code:** `TTFF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | T | F | F |\n\n```omi\n(wittgenstein.cell\n  (code . 12)\n  (truth . TTFF)\n  (operator . p)\n  (expression . \"p\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "1"
+    },
+    {
+      "id": "w13",
+      "type": "text",
+      "x": 360,
+      "y": 540,
+      "width": 300,
+      "height": 210,
+      "text": "## 13: p ← q\n\n**Name:** Converse implication  \n**Expression:** `if q then p`  \n**Tractatus:** `Bpq`  \n**Truth code:** `TTFT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | T | F | T |\n\n```omi\n(wittgenstein.cell\n  (code . 13)\n  (truth . TTFT)\n  (operator . p ← q)\n  (expression . \"if q then p\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "2"
+    },
+    {
+      "id": "w15",
+      "type": "text",
+      "x": 720,
+      "y": 540,
+      "width": 300,
+      "height": 210,
+      "text": "## 15: ⊤\n\n**Name:** Tautology  \n**Expression:** `true`  \n**Tractatus:** `Vpq`  \n**Truth code:** `TTTT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | T | T | T |\n\n```omi\n(wittgenstein.cell\n  (code . 15)\n  (truth . TTTT)\n  (operator . ⊤)\n  (expression . \"true\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "4"
+    },
+    {
+      "id": "w14",
+      "type": "text",
+      "x": 1080,
+      "y": 540,
+      "width": 300,
+      "height": 210,
+      "text": "## 14: OR\n\n**Name:** Logical disjunction  \n**Expression:** `p ∨ q`  \n**Tractatus:** `Apq`  \n**Truth code:** `TTTF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | T | T | F |\n\n```omi\n(wittgenstein.cell\n  (code . 14)\n  (truth . TTTF)\n  (operator . OR)\n  (expression . \"p ∨ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "3"
+    },
+    {
+      "id": "w08",
+      "type": "text",
+      "x": 0,
+      "y": 810,
+      "width": 300,
+      "height": 210,
+      "text": "## 8: AND\n\n**Name:** Logical conjunction  \n**Expression:** `p ∧ q`  \n**Tractatus:** `Kpq`  \n**Truth code:** `TFFF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | F | F | F |\n\n```omi\n(wittgenstein.cell\n  (code . 8)\n  (truth . TFFF)\n  (operator . AND)\n  (expression . \"p ∧ q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "3"
+    },
+    {
+      "id": "w09",
+      "type": "text",
+      "x": 360,
+      "y": 810,
+      "width": 300,
+      "height": 210,
+      "text": "## 9: XNOR\n\n**Name:** Biconditional  \n**Expression:** `p iff q`  \n**Tractatus:** `Epq`  \n**Truth code:** `TFFT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | F | F | T |\n\n```omi\n(wittgenstein.cell\n  (code . 9)\n  (truth . TFFT)\n  (operator . XNOR)\n  (expression . \"p iff q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "4"
+    },
+    {
+      "id": "w11",
+      "type": "text",
+      "x": 720,
+      "y": 810,
+      "width": 300,
+      "height": 210,
+      "text": "## 11: p → q\n\n**Name:** Material implication  \n**Expression:** `if p then q`  \n**Tractatus:** `Cpq`  \n**Truth code:** `TFTT`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | F | T | T |\n\n```omi\n(wittgenstein.cell\n  (code . 11)\n  (truth . TFTT)\n  (operator . p → q)\n  (expression . \"if p then q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "6"
+    },
+    {
+      "id": "w10",
+      "type": "text",
+      "x": 1080,
+      "y": 810,
+      "width": 300,
+      "height": 210,
+      "text": "## 10: q\n\n**Name:** Projection q  \n**Expression:** `q`  \n**Tractatus:** `Hpq`  \n**Truth code:** `TFTF`\n\n| p | T | T | F | F |\n|---|---|---|---|---|\n| q | T | F | T | F |\n| f | T | F | T | F |\n\n```omi\n(wittgenstein.cell\n  (code . 10)\n  (truth . TFTF)\n  (operator . q)\n  (expression . \"q\")\n  (previous.group . omi---imo)\n  (previous.relation . o---o/---/?---?@---@)\n  (post.group . omi---imo)\n  (post.relation . o---o/---/?---?@---@))\n```\n",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-complement-00-15",
+      "fromNode": "w00",
+      "toNode": "w15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-01-14",
+      "fromNode": "w01",
+      "toNode": "w14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-02-13",
+      "fromNode": "w02",
+      "toNode": "w13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-03-12",
+      "fromNode": "w03",
+      "toNode": "w12",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-04-11",
+      "fromNode": "w04",
+      "toNode": "w11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-05-10",
+      "fromNode": "w05",
+      "toNode": "w10",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-06-09",
+      "fromNode": "w06",
+      "toNode": "w09",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-complement-07-08",
+      "fromNode": "w07",
+      "toNode": "w08",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "negative / complement",
+      "color": "1"
+    },
+    {
+      "id": "e-gray-r-00-01",
+      "fromNode": "w00",
+      "toNode": "w01",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-00-04",
+      "fromNode": "w00",
+      "toNode": "w04",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-01-03",
+      "fromNode": "w01",
+      "toNode": "w03",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-01-05",
+      "fromNode": "w01",
+      "toNode": "w05",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-03-02",
+      "fromNode": "w03",
+      "toNode": "w02",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-03-07",
+      "fromNode": "w03",
+      "toNode": "w07",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-02-00",
+      "fromNode": "w02",
+      "toNode": "w00",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-02-06",
+      "fromNode": "w02",
+      "toNode": "w06",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-04-05",
+      "fromNode": "w04",
+      "toNode": "w05",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-04-12",
+      "fromNode": "w04",
+      "toNode": "w12",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-05-07",
+      "fromNode": "w05",
+      "toNode": "w07",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-05-13",
+      "fromNode": "w05",
+      "toNode": "w13",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-07-06",
+      "fromNode": "w07",
+      "toNode": "w06",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-07-15",
+      "fromNode": "w07",
+      "toNode": "w15",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-06-04",
+      "fromNode": "w06",
+      "toNode": "w04",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-06-14",
+      "fromNode": "w06",
+      "toNode": "w14",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-12-13",
+      "fromNode": "w12",
+      "toNode": "w13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-12-08",
+      "fromNode": "w12",
+      "toNode": "w08",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-13-15",
+      "fromNode": "w13",
+      "toNode": "w15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-13-09",
+      "fromNode": "w13",
+      "toNode": "w09",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-15-14",
+      "fromNode": "w15",
+      "toNode": "w14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-15-11",
+      "fromNode": "w15",
+      "toNode": "w11",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-14-12",
+      "fromNode": "w14",
+      "toNode": "w12",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-14-10",
+      "fromNode": "w14",
+      "toNode": "w10",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-08-09",
+      "fromNode": "w08",
+      "toNode": "w09",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-08-00",
+      "fromNode": "w08",
+      "toNode": "w00",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-09-11",
+      "fromNode": "w09",
+      "toNode": "w11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-09-01",
+      "fromNode": "w09",
+      "toNode": "w01",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-11-10",
+      "fromNode": "w11",
+      "toNode": "w10",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-11-03",
+      "fromNode": "w11",
+      "toNode": "w03",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-r-10-08",
+      "fromNode": "w10",
+      "toNode": "w08",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "gray adjacent",
+      "color": "5"
+    },
+    {
+      "id": "e-gray-d-10-02",
+      "fromNode": "w10",
+      "toNode": "w02",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "gray adjacent",
+      "color": "5"
+    }
+  ]
+}
