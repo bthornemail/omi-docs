@@ -10639,7 +10639,7 @@ That is fine conceptually, but implementation-wise you must enforce:
 ```text
 I₈, I₉, I₁₀, I₁₁, I₁₂ must be:
 → pure functions
-→ stateless
+→ meta-memory
 → deterministic over S
 ```
 
